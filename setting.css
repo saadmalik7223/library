@@ -1,0 +1,595 @@
+@font-face {
+  font-family: "one";
+  src: url(./one.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "two";
+  src: url(./two.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "three";
+  src: url(./three.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+.stick {
+  display: none;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+#zzz {
+  margin-right: 2.5%;
+  font-size: 2rem;
+}
+#card_a2 {
+  display: none;
+  background: none;
+  border: none;
+}
+
+.card_1 {
+  display: none;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 80%;
+
+  position: absolute;
+}
+#card_a5,
+#card_a6 {
+  background: black;
+  border: 2px solid grey;
+}
+.back_setting {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20%;
+  z-index: 23;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  font-size: 5rem;
+}
+
+.dark_mode {
+  transition: 1s;
+  width: 20%;
+  height: 10%;
+  background: grey;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  border-radius: 30px;
+  border: white 3px solid;
+}
+.mode_btn {
+  transition: 1s;
+  position: absolute;
+  display: inline-flex;
+  width: 35%;
+  height: 90%;
+  top: 5%;
+  left: 3%;
+  border-radius: 100%;
+  background: black;
+  z-index: 22;
+  box-sizing: border-box;
+  border: 5px solid green;
+}
+.mode_btn_a {
+  transition: 1s;
+  left: 62%;
+  background: black;
+  border: 5px solid red;
+}
+.btn_detail {
+  transition: 1s;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+  z-index: 21;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: one;
+  color: green;
+}
+.btn_detail_a {
+  left: 0%;
+  color: red;
+}
+.dark_mode_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: one;
+  width: 35%;
+  border-bottom: 2px white solid;
+  height: 10%;
+  background: black;
+  position: absolute;
+  top: 10%;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+.input {
+  width: 60%;
+  height: 30%;
+
+  position: absolute;
+  top: 30%;
+}
+.input_color {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+}
+#color1,
+#color2 {
+  margin-top: 2%;
+  margin-left: 20%;
+}
+.input_dtl {
+  padding-left: 5%;
+  font-family: one;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0%;
+}
+.note_input {
+  width: 80%;
+  height: 10%;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 60%;
+  left: 2%;
+}
+
+/* CARD 5*/
+.theme_detail {
+  color: black;
+  top: 5%;
+  padding-left: 1%;
+  width: 80%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: grey;
+  font-family: one;
+  font-size: 1rem;
+}
+.input_theme {
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+
+  left: 5%;
+}
+.theme_card {
+  transition: 1s;
+  top: 2%;
+  left: 4.5%;
+  margin: 2%;
+  position: relative;
+  width: 18%;
+  height: 40%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  background-color: black;
+  background-size: 100% 100%;
+  display: inline-flex;
+}
+.theme_card:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 5px 20px white;
+}
+
+/*   div one for register */
+/* start here */
+
+.register_form {
+  border-top: skyblue 10px solid;
+  border-bottom: skyblue 10px solid;
+  border-radius: 20px;
+  width: 60%;
+  height: 100%;
+  background: grey;
+  position: relative;
+  left: 20%;
+}
+.head_reg {
+  width: 80%;
+  height: 10%;
+  background: skyblue;
+  position: relative;
+  left: 10%;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.det_reg {
+  width: 80%;
+  height: 75%;
+  /*  background: black;*/
+  position: relative;
+  left: 10%;
+  top: 10%;
+}
+.user_input {
+  width: 85%;
+  height: 100%;
+  background: white;
+
+  left: 0%;
+  position: relative;
+}
+.user_in {
+  border: 2px solid white;
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 11%;
+  /*background:yellow;*/
+  margin-top: 3%;
+}
+#user_logo {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#user_radio_btn {
+  padding-left: 5%;
+}
+#gender_logo_fw {
+  margin-right: 4%;
+}
+select {
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+#form_fil {
+  background: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  color: black;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+/* feedback page start here */
+
+.feed_page {
+  border-top: skyblue 10px solid;
+  border-bottom: skyblue 10px solid;
+  border-radius: 20px;
+  width: 64%;
+  height: 100%;
+  background: grey;
+  position: relative;
+  left: 18%;
+}
+.head_feed {
+  box-sizing: border-box;
+  border-radius: 0.72rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 10%;
+  background: skyblue;
+  position: relative;
+  left: 10%;
+  top: 5%;
+}
+
+.feed_one {
+  font-size: 0.91rem;
+  margin-top: 2%;
+  width: 80%;
+  height: 15%;
+  position: relative;
+  background: grey;
+  top: 10%;
+  left: 10%;
+}
+#btn_feed {
+  margin-top: 4%;
+  width: 50%;
+  height: 7%;
+  position: relative;
+  background: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  border-radius: 2rem;
+}
+.fa-start {
+  transition: 0.2s;
+  color: skyblue;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.fa-star:hover {
+  transition: 0.4s;
+  transform: scale(1.4);
+}
+
+.point {
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+}
+.square {
+  font-weight: bolder;
+  color: white;
+  transition: 0.2s;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  box-sizing: border-box;
+  width: 10%;
+  height: 100%;
+  background: skyblue;
+}
+.square:hover {
+  transition: 0.4s;
+  transform: scale(1.4);
+}
+
+.love {
+  transition: 0.1s;
+  box-sizing: border-box;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3%;
+  font-size: 0.003rem;
+  width: 30%;
+  height: 100%;
+  background: skyblue;
+}
+.love:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.love_card {
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+#love {
+  color: white;
+  font-size: 0.91rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#star {
+  color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 14%;
+  height: 40%;
+  opacity: 0.24;
+}
+/* ABOUT ME PAGE START HERE */
+.about_me {
+  overflow-y: scroll;
+  border-top: skyblue 10px solid;
+  border-bottom: skyblue 10px solid;
+  border-radius: 20px;
+  width: 60%;
+  height: 90%;
+  background: black;
+  position: relative;
+  left: 20%;
+  top: 5%;
+}
+.head_about {
+  border: 2px black solid;
+  border-radius: 2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 25;
+  width: 80%;
+  height: 10%;
+  background: skyblue;
+  position: sticky;
+  left: 10%;
+  top: 5%;
+}
+.about_web {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  position: relative;
+  margin-top: 10%;
+}
+.about_pro {
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 50%;
+  background: black;
+  position: relative;
+}
+.about_dev {
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 50%;
+  background: black;
+  position: relative;
+}
+.a_w_photo {
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background-image: url(theme/1.png);
+  background-size: 100% 100%;
+  display: inline-flex;
+  left: 5%;
+  top: 5%;
+  width: 40%;
+  height: 90%;
+  position: relative;
+  background-color: black;
+}
+#pho_dev {
+  background-image: url(4.png);
+  background-size: 100% 100%;
+}
+#theme_next {
+  background-image: url(theme/6.png);
+  background-size: 100% 100%;
+}
+.a_w_det {
+  color: white;
+  box-sizing: border-top;
+  padding: 0.4rem;
+  font-size: 0.4rem;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5%;
+  top: 5%;
+  width: 45%;
+  height: 90%;
+  position: relative;
+  background: black;
+}
+.dtl_a_w {
+  font-weight: bolder;
+  color: black;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  background: skyblue;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+}
+
+/* CARD FOR HELP -DESK*/
+
+.help_card {
+  border-top: skyblue 10px solid;
+  border-bottom: skyblue 10px solid;
+  border-radius: 20px;
+  width: 66%;
+  height: 100%;
+  background: grey;
+  position: relative;
+  left: 17%;
+}
+.head_help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 10%;
+  position: relative;
+  left: 10%;
+  top: 3%;
+  background: skyblue;
+  color: black;
+}
+.help_det {
+  padding-top: 2%;
+
+  width: 80%;
+  height: 80%;
+  background: grey;
+  left: 10%;
+  top: 10%;
+  position: relative;
+}
+
+.search_bar {
+  width: 100%;
+  height: 10%;
+  background: pink;
+  position: relative;
+  margin-top: 3%;
+}
+#search_in {
+  width: 80%;
+  height: 100%;
+}
+.fa-search {
+  margin-left: 5%;
+  line-height: 100%;
+}
+#search_list {
+  width: 100%;
+
+  position: relative;
+  /* background: green;*/
+  margin-top: 1%;
+  margin-left: 0%;
+}
+
+#search_list li {
+  font-size: 1rem;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  /* background: green;*/
+  margin-bottom: 0%;
+  margin-left: -10%;
+  margin-top: 5%;
+}
+.list_help {
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background: grey;
+}

@@ -1,0 +1,491 @@
+:root {
+  --color1: grey;
+  --color2: black;
+  --h: 100vh;
+}
+
+body {
+  color: white;
+  font-size: 15pt;
+  padding: 0;
+  margin: 0;
+}
+@keyframes two {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes one {
+  from {
+    height: 50%;
+  }
+  to {
+    height: 30%;
+  }
+}
+
+@font-face {
+  font-family: "one";
+  src: url(/one.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "two";
+  src: url(/two.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "three";
+  src: url(/three.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main {
+  position: relative;
+  width: 100vw;
+  height: var(--h);
+
+  background: var(--color2);
+}
+.main2 {
+  width: 100vw;
+  height: var(--h);
+  position: relative;
+  background: pink;
+  background-color: var(--color2);
+  border-top: 1px white solid;
+}
+.main3 {
+  background: var(--color1);
+  width: 100vw;
+  height: var(--h);
+}
+
+.quote {
+  box-sizing: border-box;
+  padding-top: 5%;
+  padding-left: 3%;
+  position: relative;
+  top: 5%;
+  left: 55%;
+  width: 40%;
+  height: 90%;
+  background-image: url(cover1.png);
+  background-size: 100% 100%;
+  border-radius: 50px;
+  border: 2px white solid;
+  background-color: var(--color1);
+}
+.logo {
+  top: 10%;
+  z-index: 2;
+  width: 40%;
+  height: 24%;
+  position: absolute;
+  box-sizing: border-box;
+  color: yellow;
+}
+
+.one {
+  font-family: one;
+  animation: one 1 1.2s;
+  color: var(--color2);
+  font-size: 3rem;
+  box-sizing: border-box;
+  padding-left: 30%;
+  display: flex;
+  align-items: center;
+  transition: 0.51s;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.two {
+  animation: two 1 1s;
+  font-family: two;
+  top: 2%;
+  padding-left: 10%;
+  color: var(--color2);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  box-sizing: border-box;
+  transition: 1s;
+  left: 50%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.border {
+  background: var(--color1);
+  transition: 1s;
+  position: absolute;
+  top: 6.5%;
+  left: 7.5%;
+  width: 40%;
+  height: 20%;
+  border: 2px white solid;
+  border-radius: 30px;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.class {
+  z-index: 4;
+  height: 25%;
+  width: 15%;
+  transition: 0.5s;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  background-image: url(book.png);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+.class:hover {
+  transform: scale(0.8);
+}
+.class_a {
+  height: 25%;
+  width: 15%;
+  transition: 1s;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  background-image: url(book.png);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+
+.dtl {
+  transition: 0.5s;
+  position: absolute;
+  width: 40%;
+  height: 0%;
+  border: 2px solid white;
+  top: 42%;
+  left: 7.2%;
+  z-index: 3;
+  background-color: var(--color1);
+  border-radius: 50px;
+}
+.aa {
+  color: var(--color2);
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 75%;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: two;
+}
+
+/*   MAIN DIV START FROM HERE ON-WARD*/
+
+.sub {
+  width: 90%;
+  height: 90%;
+  background: var(--color1);
+  position: relative;
+  top: 10%;
+  left: 5%;
+}
+.menu_bar {
+  box-sizing: border-box;
+  border: 2px var(--color1) solid;
+  width: 20%;
+  height: 100%;
+  background: black;
+  position: absolute;
+}
+.nav_a {
+  font-weight: bolder;
+  opacity: 0.8;
+  color: var(--color1);
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  position: relative;
+  border-left: 5px solid var(--color1);
+  top: 10%;
+  display: flex;
+  padding-left: 20%;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+.sub_nav_a {
+  font-size: 0.9rem;
+  color: var(--color1);
+  transition: 0.5s;
+  overflow: hidden;
+  width: 80%;
+  left: 30%;
+  height: 0%;
+  position: relative;
+  border-left: 0.1px solid var(--color2);
+  top: 10%;
+  display: flex;
+  box-sizing: border-box;
+}
+.sub_nav_b {
+  transition: 1s;
+  overflow: hidden;
+  width: 80%;
+  left: 30%;
+  height: 30%;
+  position: relative;
+  border-left: 0.1px solid var(--color1);
+  top: 10%;
+  display: flex;
+  box-sizing: border-box;
+}
+.sub_nav_a1 {
+  font-size: 0.9rem;
+  color: var(--color1);
+  transition: 0.5s;
+  overflow: hidden;
+  width: 80%;
+  left: 30%;
+  height: 0%;
+  position: relative;
+  border-left: 0.1px solid var(--color1);
+  top: 10%;
+  display: flex;
+  box-sizing: border-box;
+}
+.sub_nav_b1 {
+  transition: 1s;
+  overflow: hidden;
+  width: 80%;
+  left: 30%;
+  height: 15%;
+  position: relative;
+  border-left: 0.1px solid var(--color1);
+  top: 10%;
+  display: flex;
+  box-sizing: border-box;
+}
+ul {
+  width: 100%;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: -20%;
+  list-style-type: none;
+}
+li {
+  width: 100%;
+  margin-bottom: 20%;
+}
+#sub_list {
+  margin-right: 7%;
+}
+li:hover {
+  transition: 0.5s;
+  border-bottom: 1px solid green;
+}
+
+.genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  color: black;
+  font-family: two;
+  left: 20%;
+  top: 0%;
+}
+.a1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  top: 13%;
+  left: 25%;
+  width: 15%;
+  height: 8%;
+  background: black;
+  position: absolute;
+  border: 2px white solid;
+  border-radius: 10px;
+}
+.a1:hover {
+  transition: 0.51s;
+  transform: scale(1.2);
+}
+#a3 {
+  left: 43%;
+}
+#a4 {
+  left: 61%;
+}
+#a5 {
+  left: 80%;
+}
+.gen_a {
+  perspective: 2000px;
+  perspective-origin: center;
+  overflow: scroll;
+  position: absolute;
+  width: 70%;
+  height: 140%;
+  /*height: 70%;*/
+  background: black;
+  left: 25%;
+  top: 28%;
+  border-bottom: 5px solid white;
+}
+
+.small {
+  box-sizing: border-box;
+  border: 0.3px solid white;
+  transition: 0.3s;
+  width: 22%;
+  left: 5%;
+  top: 5%;
+  height: 22%;
+  background: black;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+}
+
+.small:hover {
+  transition: 0.5s;
+  transform: scale(1.21) translateX(-10px) translateY(-20px);
+  z-index: 20;
+  background-color: var(--color1);
+  box-shadow: 0px 0px 10px white;
+  background-size: 100% 100%;
+}
+
+/* MAIN DIV NO THREE START HERE */
+
+#two {
+  background: black;
+  display: none;
+}
+#three {
+  background: black;
+  display: block;
+}
+#four {
+  display: none;
+  background: black;
+}
+#one {
+  display: none;
+  background: black;
+}
+.b1 {
+  position: relative;
+  left: 5%;
+  background-color: black;
+  width: 18%;
+  border: 2px var(--color2) solid;
+  height: 13%;
+  top: 7%;
+  color: white;
+  font-size: 0.7rem;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+#b3 {
+  top: 14%;
+  background-image: url(book-21.gif);
+  background-size: 100% 100%;
+}
+#b4 {
+  background-image: url(88.gif);
+  background-size: 100% 100%;
+  top: 21%;
+}
+.cnt {
+  margin-top: 17%;
+  width: 100%;
+  height: 20%;
+  background: var(--color1);
+  top: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail {
+  font-size: 1.5rem;
+  font-family: three;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 60%;
+  border-bottom: 1px var(--color2) solid;
+  border-top: 1px solid white;
+  box-shadow: 0px 0px 10px var(--color2);
+  border-radius: 5%;
+  display: inline-flex;
+  margin-left: 4%;
+}
+#mm {
+  width: 35%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.fa-phone-alt,
+.fa-home,
+.fa-tools,
+.fa-buffer {
+  transition: 0.7s;
+  opacity: 0.4;
+  margin-right: 5%;
+}
+.fa-phone-alt:hover,
+.fa-home:hover,
+.fa-tools:hover,
+.fa-buffer:hover {
+  color: green;
+}
+.fa-book {
+  margin-right: 1%;
+}
+.fa-angle-double-down {
+  margin-right: 5%;
+}
+#comic,
+#academic,
+#sci_fi {
+  display: none;
+  color: green;
+}
+#novel {
+  display: block;
+  color: green;
+}
